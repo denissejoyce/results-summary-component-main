@@ -1,0 +1,43 @@
+@use "../util/" as *;
+
+.summary {
+  color: $button;
+  width: 100%;
+
+  @include toFlex();
+  align-items: flex-start;
+  &__table {
+    border-collapse: separate;
+    border-spacing: 0 13px;
+    width: inherit;
+    text-align: justify;
+  }
+}
+
+.category th {
+  border-radius: 8px 0 0 8px;
+  width: 70%;
+  //   padding-left: 50px;
+  @include toFlex(row, 2px);
+}
+
+.category td {
+  border-radius: 0 8px 8px 0;
+  width: 30%;
+}
+
+.category:first-of-type {
+  background-color: $reaction;
+}
+
+.category:nth-of-type(2) {
+  background-color: $memory;
+}
+
+.category:nth-of-type(3) {
+  background-color: $verbal;
+}
+
+.category:last-of-type {
+  background-color: $visual;
+}

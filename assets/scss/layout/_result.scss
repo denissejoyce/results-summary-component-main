@@ -1,0 +1,39 @@
+@use "../util/" as *;
+
+.result {
+  background: linear-gradient($bg-light, $bg-dark);
+  border-radius: 0 0 28px 28px;
+
+  @include toFlex(column, 8px);
+  text-align: center;
+  width: 100%;
+}
+
+.score {
+  background: linear-gradient($circle-dark, $circle-light);
+  border-radius: 50%;
+  margin: 5px;
+  width: 128px;
+  height: 128px;
+  position: relative;
+}
+
+.score div {
+  position: absolute;
+  top: 25%;
+  left: 26%;
+  -ms-transform: translateY(-19%);
+  transform: translateY(-19%);
+}
+
+.score__ave {
+  margin-top: 10px;
+}
+
+.score__total {
+  margin-top: -10px;
+}
+
+.result__info {
+  width: 250px;
+}

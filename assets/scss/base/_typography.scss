@@ -1,0 +1,62 @@
+@use "../util/" as *;
+
+// @font-face {
+//   font-family: "HankenGrotesk";
+//   src: url(../../fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "HankenGrotesk";
+//   src: url(../../fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "HankenGrotesk";
+//   src: url(../../fonts/static/HankenGrotesk-ExtraBold.ttf) format("truetype");
+//   font-weight: bolder;
+//   font-style: normal;
+// }
+
+body {
+  font-family: "Hanken Grotesk", serif;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: inherit;
+}
+
+.result {
+  color: $font-secondary;
+
+  .score__ave {
+    font-size: calc(18px * 3);
+  }
+
+  .score__ave,
+  .result__assess {
+    color: $font-primary;
+    font-weight: 800;
+  }
+
+  .score,
+  .result__info {
+    font-size: calc(18px / 1.25);
+    font-weight: 700;
+  }
+
+  .score__total,
+  .result__info {
+    opacity: 75%;
+  }
+}
+
+.btn {
+  color: $font-primary;
+  text-decoration: none;
+  text-align: center;
+}

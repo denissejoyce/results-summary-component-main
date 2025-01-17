@@ -1,0 +1,13 @@
+@use "../util/" as *;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: $attribution;
+}
+
+body {
+  background-color: $background;
+}

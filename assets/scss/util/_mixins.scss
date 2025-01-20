@@ -4,3 +4,18 @@
   align-items: center;
   gap: $gap;
 }
+
+@mixin toPress() {
+  animation: btnPress 1s ease;
+
+  @keyframes btnPress {
+    0% {
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+}

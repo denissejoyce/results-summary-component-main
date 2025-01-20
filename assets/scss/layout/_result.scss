@@ -7,6 +7,13 @@
   @include toFlex(column, 8px);
   text-align: center;
   width: 100%;
+
+  @include breakpoint(medium) {
+    gap: 30px;
+    border-radius: 14px;
+    height: 450px;
+    z-index: 1;
+  }
 }
 
 .score {
@@ -35,5 +42,9 @@
 }
 
 .result__info {
-  width: 250px;
+  width: 200px;
+
+  @include breakpoint(medium) {
+    width: 250px;
+  }
 }

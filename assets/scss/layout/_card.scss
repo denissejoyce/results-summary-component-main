@@ -7,4 +7,14 @@
   .summary {
     padding: 30px;
   }
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    min-height: calc(100vh - 30px);
+    margin: 0 15%;
+  }
+
+  @include breakpoint(xlarge) {
+    margin: 0 30%;
+  }
 }

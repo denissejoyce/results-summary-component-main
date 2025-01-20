@@ -2,6 +2,8 @@
 
 .summary {
   a {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
     width: 100%;
     background-color: $button;
     border-radius: 25px;
@@ -11,5 +13,9 @@
   a:hover {
     cursor: pointer;
     background: linear-gradient($bg-dark, $bg-light);
+  }
+
+  a:active {
+    @include toPress();
   }
 }

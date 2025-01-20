@@ -23,7 +23,7 @@
 
 body {
   font-family: "Hanken Grotesk", serif;
-  font-size: 18px;
+  font-size: clamp(1rem, 5.733vw, 1.4rem);
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
 .summary a,
 .score,
 .result__info {
-  font-size: calc(18px / 1.25);
+  font-size: clamp(0.75rem, 3.84vw, 1.115rem);
   font-weight: 700;
 }
 
@@ -41,7 +41,7 @@ h2 {
   color: $font-secondary;
 
   .score__ave {
-    font-size: calc(18px * 3);
+    font-size: clamp(3.25rem, 14.4vw, 3.5rem);
   }
 
   .score__ave,
@@ -63,7 +63,7 @@ h2 {
 }
 
 .category {
-  font-size: calc(18px / 1.25);
+  font-size: clamp(0.75rem, 3.84vw, 1.115rem);
 }
 
 .category:first-of-type {
@@ -85,7 +85,7 @@ h2 {
 .category__score {
   color: $button-txt;
   font-weight: 800;
-
+  text-align: end;
   letter-spacing: 1px;
 
   span {

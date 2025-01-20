@@ -1,12 +1,15 @@
 @use "../util/" as *;
 
-.btn {
-  width: 100%;
-  background-color: $button;
-  border-radius: 25px;
-  padding: 10px;
-}
+.summary {
+  a {
+    width: 100%;
+    background-color: $button;
+    border-radius: 25px;
+    padding: 10px;
+  }
 
-btn:hover {
-  cursor: pointer;
+  a:hover {
+    cursor: pointer;
+    background: linear-gradient($bg-dark, $bg-light);
+  }
 }

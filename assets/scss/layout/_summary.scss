@@ -14,16 +14,20 @@
   }
 }
 
-.category th {
+.category__name {
   border-radius: 8px 0 0 8px;
-  width: 70%;
-  //   padding-left: 50px;
-  @include toFlex(row, 2px);
+  width: 75%;
+  padding-left: 38px;
 }
 
-.category td {
+.category__score {
   border-radius: 0 8px 8px 0;
-  width: 30%;
+  width: 25%;
+}
+
+.category__name,
+.category td {
+  height: 45px;
 }
 
 .category:first-of-type {

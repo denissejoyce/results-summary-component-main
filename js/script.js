@@ -9,24 +9,20 @@ fetch('../data.json')
     let ave = 0;
     data.forEach(category => {
       ave += category.score;
-      console.log(ave);
 
       const row = document.createElement('tr');
       row.setAttribute('class', `category`);
       const header = document.createElement('th');
-      const name = document.createElement('p');
-      name.setAttribute('class', `category__name`);
-      name.innerText = `${category.category}`;
 
-      const icon = document.createElement('img');
-      icon.setAttribute('src', `${category.icon}`);
-      icon.setAttribute('class', `category__icon`);
+      header.setAttribute('class', `category__name`);
+      header.style.backgroundImage = `url(${category.icon})`;
+      header.style.backgroundRepeat = 'no-repeat';
+      header.style.backgroundPosition = '12px 50%';
+      header.innerText = `${category.category}`;
 
       const data = document.createElement('td');
-      data.innerHTML = `<span class="category__score">${category.score}</span>/100`;
-
-      header.appendChild(icon);
-      header.appendChild(name);
+      data.setAttribute('class', `category__score`);
+      data.innerHTML = `<span>${category.score}</span>/100`;
       row.appendChild(header);
       row.appendChild(data);
       document.querySelector('table').appendChild(row);

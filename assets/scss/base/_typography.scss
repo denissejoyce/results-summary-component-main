@@ -30,6 +30,13 @@ h2 {
   font-size: inherit;
 }
 
+.summary a,
+.score,
+.result__info {
+  font-size: calc(18px / 1.25);
+  font-weight: 700;
+}
+
 .result {
   color: $font-secondary;
 
@@ -43,20 +50,48 @@ h2 {
     font-weight: 800;
   }
 
-  .score,
-  .result__info {
-    font-size: calc(18px / 1.25);
-    font-weight: 700;
-  }
-
   .score__total,
   .result__info {
     opacity: 75%;
   }
 }
 
-.btn {
+.summary a {
   color: $font-primary;
   text-decoration: none;
   text-align: center;
+}
+
+.category {
+  font-size: calc(18px / 1.25);
+}
+
+.category:first-of-type {
+  color: $reaction-txt;
+}
+
+.category:nth-of-type(2) {
+  color: $memory-txt;
+}
+
+.category:nth-of-type(3) {
+  color: $verbal-txt;
+}
+
+.category:last-of-type {
+  color: $visual-txt;
+}
+
+.category__score {
+  color: $button-txt;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  span {
+    color: $button;
+  }
+  span::after {
+    content: " ";
+  }
 }

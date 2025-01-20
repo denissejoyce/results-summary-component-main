@@ -30,38 +30,6 @@ h2 {
   font-size: inherit;
 }
 
-.summary a,
-.score,
-.result__info {
-  font-size: clamp(0.75rem, 3.84vw, 1.115rem);
-  font-weight: 700;
-}
-
-.result {
-  color: $font-secondary;
-
-  .score__ave {
-    font-size: clamp(3.25rem, 14.4vw, 3.5rem);
-  }
-
-  .score__ave,
-  .result__assess {
-    color: $font-primary;
-    font-weight: 800;
-  }
-
-  .score__total,
-  .result__info {
-    opacity: 75%;
-  }
-}
-
-.summary a {
-  color: $font-primary;
-  text-decoration: none;
-  text-align: center;
-}
-
 .category {
   font-size: clamp(0.75rem, 3.84vw, 1.115rem);
 }
@@ -94,4 +62,36 @@ h2 {
   span::after {
     content: " ";
   }
+}
+
+.summary a,
+.score,
+.result__info {
+  font-size: clamp(0.75rem, 3.84vw, 1.115rem);
+  font-weight: 700;
+}
+
+.result {
+  color: $font-secondary;
+
+  .score__ave {
+    font-size: clamp(3.25rem, 14.4vw, 3.5rem);
+  }
+
+  .score__ave,
+  .result__assess {
+    color: $font-primary;
+    font-weight: 800;
+  }
+
+  .score__total,
+  .result__info {
+    opacity: 75%;
+  }
+}
+
+.summary a {
+  color: $font-primary;
+  text-decoration: none;
+  text-align: center;
 }

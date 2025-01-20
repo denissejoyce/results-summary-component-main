@@ -3,13 +3,12 @@
 .summary {
   color: $button;
   width: 100%;
-  background-color: white;
 
   @include toFlex();
   align-items: flex-start;
   &__table {
     border-collapse: separate;
-    border-spacing: 0 13px;
+    border-spacing: 0 0.813rem;
     width: inherit;
     text-align: justify;
   }
@@ -17,16 +16,16 @@
   @include breakpoint(medium) {
     border-radius: 0 14px 14px 0;
     box-shadow: 15px 15px 30em -35px $font-secondary;
-    height: 450px;
+    height: 28.125rem;
     z-index: 0;
-    gap: 20px;
-    margin-left: -30px;
+    gap: 1.25rem;
+    margin-left: -1.875rem;
     width: 100%;
 
     a,
     h2,
     .summary__table {
-      margin-left: 25px;
+      margin-left: 1.563rem;
       width: 93%;
 
       .category__name {
@@ -42,18 +41,18 @@
 .category__name {
   border-radius: 8px 0 0 8px;
   width: 70%;
-  padding-left: 38px;
+  padding-left: 2.375rem;
 }
 
 .category__score {
   border-radius: 0 8px 8px 0;
   width: 30%;
-  padding-right: 18px;
+  padding-right: 1.125rem;
 }
 
 .category__name,
 .category td {
-  height: 45px;
+  height: 2.813rem;
 }
 
 .category:first-of-type {

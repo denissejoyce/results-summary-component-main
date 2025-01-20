@@ -10,7 +10,7 @@
 
   @include breakpoint(medium) {
     flex-direction: row;
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 1.875em);
     margin: 0 15%;
   }
 
